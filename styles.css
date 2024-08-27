@@ -6,7 +6,7 @@ body {
 
 ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style-type: none;
     align-items: center;
     padding: 16px;
@@ -26,7 +26,58 @@ a{
     text-align: center;
 }
 
-.h1 {
-   color: rgb(56, 56, 161);
+h1{
+   color: white;
+   text-align: center;
+}
+form{
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(51, 50, 49);
 }
 
+form label{
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+}
+
+form legend{
+    padding: 0 10px;
+    font-weight: bold;
+    color: black;
+}
+
+form input[type="text"]
+form input[type="email"]
+form input[type="password"]
+form input[type="number"]
+form input[type="date"]
+form input[type="url"]
+form select,
+form textarea{
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+form input[type="radio"],
+form input[type="checkbox"]{
+    margin-right: 10px;
+}
+form button{
+    cursor: pointer;
+    background-color: rgb(56, 56, 161);
+    color: #ddd;
+    border: #ddd;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+form button:hover{
+    background-color: black;
+}
